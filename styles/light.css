@@ -1,0 +1,114 @@
+/* CSS Reset & Global Styles */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans';
+    -webkit-appearance: none;
+  }
+  
+  .wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(240, 240, 240); /* ปรับเป็นสีพื้นหลังที่สว่าง */
+    transition: 0.8s all;
+  }
+  
+  h1 {
+    margin-bottom: 1.5%;
+    color: #333; /* ปรับสีของหัวข้อให้เข้มขึ้น */
+    font-weight: normal;
+  }
+  
+  .container {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+  }
+  
+  .top-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  input {
+    padding: 25px;
+    color: #333; /* ปรับสีข้อความของปุ่ม */
+    font-size: 1em;
+    cursor: pointer;
+    width: 70px;
+    background-color: #fff; /* พื้นหลังสีขาว */
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    margin: 0.2em;
+  }
+  
+  .first-row,
+  .second-row,
+  .third-row,
+  .fourth-row,
+  .fifth-row {
+    margin-bottom: 4px;
+  }
+  
+  input[type="button"] {
+    color: #333; /* ปรับสีของตัวเลขให้เข้มขึ้น */
+  }
+  
+  input[type="text"] {
+    background-color: #fff; /* พื้นหลังของผลลัพธ์เป็นสีขาว */
+    width: 222.5px;
+    color: #333; /* สีข้อความในกล่องผลลัพธ์ */
+  }
+  
+  input[type="button"]:hover {
+    background-color: rgb(37, 35, 59); /* ปรับสีของปุ่มเมื่อ hover */
+    color: #fff;
+  }
+  
+  #clear-button {
+    color: #fff;
+    background-color: rgb(255, 25, 25); /* สีปุ่มลบ */
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333; /* ปรับสีลิงก์ให้เข้มขึ้น */
+  }
+  
+  .theme-button {
+    all: unset;
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+  
+  .theme-button i {
+    font-size: 40px; /* ขนาดของไอคอน */
+    color: #ffc000; /* สีไอคอน */
+    transition: color 0.3s ease, transform 0.3s ease;
+    width: 50px; /* กำหนดความกว้างของไอคอน */
+    height: 50px; /* กำหนดความสูงของไอคอน */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .theme-button i:hover {
+    color: #ffcc00; /* เปลี่ยนสีเมื่อ hover */
+  }
+  
